@@ -8,7 +8,7 @@ import Header from "./header"
 import Footer from "./footer"
 
 export default function AboutSchool() {
-  const [isVisible, setIsVisible] = useState({})
+  const [isVisible, setIsVisible] = useState<Record<string, boolean>>({})
 
   useEffect(() => {
     const observer = new IntersectionObserver(

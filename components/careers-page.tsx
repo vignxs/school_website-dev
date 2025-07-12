@@ -14,7 +14,7 @@ import Header from "./header"
 import Footer from "./footer"
 
 export default function CareersPage() {
-  const [isVisible, setIsVisible] = useState({})
+  const [isVisible, setIsVisible] = useState<Record<string, boolean>>({})
   const [formData, setFormData] = useState({
     name: "",
     email: "",
