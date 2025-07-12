@@ -7,11 +7,10 @@ import Header from "./header"
 import Footer from "./footer"
 export default function GalleryPage() {
   const [activeFilter, setActiveFilter] = useState("All")
-  const [hoveredImage, setHoveredImage] = useState(null)
 
   const filters = ["All", "Learning", "Games", "Events"]
 
-  
+
   const galleryImages = [
     { id: 1, category: "Learning", src: "https://www.vailankannisilverjubileeschool.com/images/gallery/gl-page-one/l1.jpg", alt: "Students in classroom" },
     { id: 2, category: "Learning", src: "https://www.vailankannisilverjubileeschool.com/images/fecilities/fecilities3.jpg", alt: "Science laboratory" },

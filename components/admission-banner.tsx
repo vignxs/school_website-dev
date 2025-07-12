@@ -37,7 +37,7 @@ export default function AdmissionBanner() {
           <div className="space-y-4">
             <h2 className="text-4xl lg:text-5xl font-bold">🎓 Admissions Open for 2024-25</h2>
             <p className="text-xl lg:text-2xl text-blue-100 max-w-3xl mx-auto">
-              Join our family of excellence! Limited seats available. Secure your child's bright future with quality
+              Join our family of excellence! Limited seats available. Secure your child&apos;s bright future with quality
               education.
             </p>
           </div>

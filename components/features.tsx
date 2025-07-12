@@ -66,7 +66,7 @@ export default function Features() {
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover the exceptional facilities and services that make our school the perfect choice for your child's
+            Discover the exceptional facilities and services that make our school the perfect choice for your child&apos;s
             education
           </p>
         </div>

@@ -112,7 +112,7 @@ export default function ContactPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We're here to help and answer any questions you might have
+              We&apos;re here to help and answer any questions you might have
             </p>
           </div>
 
@@ -158,7 +158,7 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
-            <p className="text-lg text-gray-600">Send us a message and we'll get back to you as soon as possible</p>
+            <p className="text-lg text-gray-600">Send us a message and we&apos;ll get back to you as soon as possible</p>
           </div>
 
           <Card className="border-0 shadow-xl bg-white">

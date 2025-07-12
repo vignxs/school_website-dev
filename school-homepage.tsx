@@ -243,7 +243,7 @@ export default function SchoolHomepage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Discover the exceptional facilities and services that make our school the perfect choice for your child's
+              Discover the exceptional facilities and services that make our school the perfect choice for your child&apos;s
               education
             </p>
           </div>
@@ -378,10 +378,10 @@ export default function SchoolHomepage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto space-y-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
-              Admissions Open – Contact us now to secure your child's future
+              Admissions Open – Contact us now to secure your child&apos;s future
             </h2>
             <p className="text-lg text-gray-600">
-              Don't miss the opportunity to be part of our educational excellence. Limited seats available for the
+              Don&apos;t miss the opportunity to be part of our educational excellence. Limited seats available for the
               upcoming academic year.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
