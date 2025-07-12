@@ -25,11 +25,6 @@ export default function Gallery() {
     return () => observer.disconnect()
   }, [])
 
-  const list_images = [
-    "https://www.vailankannisilverjubileeschool.com/images/gallery/gallery1.JPG",
-    "https://www.vailankannisilverjubileeschool.com/images/gallery/gallery2.JPG",
-    "https://www.vailankannisilverjubileeschool.com/images/gallery/gallery3.JPG",
-  ];
   return (
     <section
       id="gallery"
@@ -52,10 +47,10 @@ export default function Gallery() {
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6 mb-12">
-          {list_images.map((item) => (
+          {[1, 2, 3].map((item) => (
             <div key={item} className="aspect-video bg-gray-200 rounded-xl overflow-hidden group">
               <Image
-                src={item}
+                src={`/placeholder.svg?height=300&width=400`}
                 alt={`Gallery Image ${item}`}
                 width={400}
                 height={300}

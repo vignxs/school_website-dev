@@ -9,7 +9,15 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false)
 
-  const navItems = ["Home", "Academic", "Facilities", "Curriculum", "Gallery", "Careers", "Contact"]
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "Academic", href: "/academic" },
+    { name: "Facilities", href: "/facilities" },
+    { name: "Curriculum", href: "/curriculum" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Careers", href: "/careers" },
+    { name: "Contact", href: "/contact" },
+  ]
 
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-blue-100">
@@ -29,13 +37,11 @@ export default function Header() {
           <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link
-                key={item}
-                href={
-                  item === "Academic" ? "/academic" : item === "Facilities" ? "/facilities" : `#${item.toLowerCase()}`
-                }
+                key={item.name}
+                href={item.href}
                 className="text-gray-700 hover:text-blue-600 transition-colors duration-200 text-sm font-medium"
               >
-                {item}
+                {item.name}
               </Link>
             ))}
 
@@ -53,7 +59,7 @@ export default function Header() {
                 <div
                   onMouseEnter={() => setIsAboutDropdownOpen(true)}
                   onMouseLeave={() => setIsAboutDropdownOpen(false)}
-                  className="absolute top-full left-0 mt-1 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2"
+                  className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2"
                 >
                   <Link
                     href="/about-school"
@@ -88,12 +94,12 @@ export default function Header() {
             <div className="flex flex-col space-y-3">
               {navItems.map((item) => (
                 <Link
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
+                  key={item.name}
+                  href={item.href}
                   className="text-gray-700 hover:text-blue-600 transition-colors duration-200 px-3 py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {item}
+                  {item.name}
                 </Link>
               ))}
               <div className="px-3 py-2">

@@ -31,7 +31,7 @@ export default function Facilities() {
       icon: BookOpen,
       title: "Child Education",
       description: "A brand-new, fully developed theme in applications is education.",
-      image: "https://www.vailankannisilverjubileeschool.com/images/fecilities/fecilities1.jpg?height=300&width=400",
+      image: "https://www.vailankannisilverjubileeschool.com/images/fecilities/fecilities3.jpg?height=300&width=400",
     },
     {
       icon: Monitor,
