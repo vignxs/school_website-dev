@@ -30,7 +30,14 @@ import Link from "next/link"
 
 export default function SchoolHomepage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isVisible, setIsVisible] = useState({})
+  const [isVisible, setIsVisible] = useState<{
+    about?: boolean
+    features?: boolean
+    events?: boolean
+    gallery?: boolean
+    stats?: boolean
+    cta?: boolean
+  }>({})
 
   useEffect(() => {
     const observer = new IntersectionObserver(

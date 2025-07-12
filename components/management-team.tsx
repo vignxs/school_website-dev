@@ -7,8 +7,11 @@ import Image from "next/image"
 import Header from "./header"
 import Footer from "./footer"
 
+type SectionKeys = "correspondent" | "principal" | "authorities" | "teaching-staff" | "support-staff";
+type VisibilityState = Partial<Record<SectionKeys, boolean>>;
+
 export default function ManagementTeam() {
-  const [isVisible, setIsVisible] = useState({})
+  const [isVisible, setIsVisible] = useState<VisibilityState>({})
 
   useEffect(() => {
     const observer = new IntersectionObserver(
